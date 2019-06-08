@@ -173,7 +173,7 @@
                             page: tab === 'new' ? context.page_number : context.page_number2
                         }
                     }).then(function (response) {
-                    	console.log(response.data)
+                    	//console.log(response.data)
                         context.is_processing = false;
                         context.is_processing2 = false;
                         context.requests = response.data.data;
