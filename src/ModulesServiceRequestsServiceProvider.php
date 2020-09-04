@@ -11,10 +11,10 @@ class ModulesServiceRequestsServiceProvider extends ServiceProvider {
 		$this->loadViewsFrom(__DIR__.'/resources/views', 'modules-service-requests');
 		$this->publishes([
 			__DIR__.'/config/modules-service-requests.php' => config_path('modules-service-requests.php'),
-		], 'config');
+		], 'dorcas-modules');
 		/*$this->publishes([
 			__DIR__.'/assets' => public_path('vendor/modules-service-requests')
-		], 'public');*/
+		], 'dorcas-modules');*/
 	}
 
 	public function register()
